@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mi portafolio</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--Sección del header-->
+        <header id="header1" class="cabecera">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img src="img/logo.png" alt="logo-portafolio" height="60"/> <!--Esto es para la imagen scr permite añadir imagenes-->
+                </div>
+                <nav class="header-menu">
+                    <ul class="header-menu-wrapper"> <!--El ul es unordered list que es neecesario para hacer una lista-->
+                        <li class="header-menu-item"><!--Cada li indica un elemento de la lista-->
+                            <a href="#aboutme" class="header-menu-link">Sobre mi</a> <!--Esta etiqueta de ancla es necesario para hacer saltos a otras paginas la opcion es link-->
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#works" class="header-menu-link">Portafolio</a>  <!--Los # nos permite a un elemento con dicho id-->
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#skills" class="header-menu-link">Habilidades</a> 
+                        </li>  
+                        <li class="header-menu-item">
+                            <a href="#contact" class="header-menu-link">Contactos</a> 
+                        </li>    
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--Sección para la portada-->
+        <section class="cover">
+            <div class="cover-wrapper">
+                <div class="cover-photo-container">
+                    <!--La siguiente linea agrega imagenes desde la web-->
+                    <img src="https://w0.peakpx.com/wallpaper/850/42/HD-wallpaper-plague-doctor-doctor-plague.jpg" alt="foto del usuario" height="200" class="cover-photo"/>
+                </div>
+                <div class="cover-text">
+                    <h1 class="cover-title">Erwin Eli Parada Martínez</h1>
+                    <h2 class="cover-subtitle">Estudiante de ing. en sistemas computacionales y tecnico en mecatronica</h2>
+                </div>
+            </div>
+        </section>
+        <!--Seccion para la informacion sobre mi-->
+        <section id="aboutme" class="aboutme">
+            <header>
+                <h1 class="tittle-underline">
+                    <span>Sobre mi</span> <!--Etiqueta inline que no aplica semantica ni nada solo es para darle formato al texto-->
+                </h1>
+            </header>
+            <div class="cover-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque adipisci voluptates eaque sequi laudantium a perspiciatis, 
+                    error sit <span>delectus</span> nostrum recusandae obcaecati asperiores ab assumenda vel aspernatur iusto aut?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit corporis alias voluptas ratione magnam minus in, 
+                    assumenda hic nostrum praesentium maxime, libero quo dicta architecto debitis veniam repudiandae similique cumque?
+                </p>
+                <div class="text-center" >
+                    <a href="mailto:perwin119@gmail.com" class="btn-blue">Contactame</a>
+                </div>
+            </div>
+        </section>
+        <!--Seccion de habilidades-->
+        <section id="skills" class="skills">
+            <header>
+                <h1 class="tittle-underline">
+                    <span>Habilidades</span>
+                </h1>
+            </header>
+            <ul class="skill-wrapper">
+                <li class="skill-item">
+                    <div class="skill-text">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-score">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-insidebar" style="width: 85%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-text">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-score">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-insidebar" style="width: 70%;">
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-text">
+                        <span class="skill-name">JS</span>
+                        <span class="skill-score">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-insidebar" style="width: 85%;">
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!--Esta sección es par mis trabajos-->
+        <section id="works" class="works">
+            <header>
+                <h1 class="tittle-underline">
+                    <span>Portafolio</span>
+                </h1>
+            </header>
+            <div class="work-wrapper">
+                <article class="works-item">
+                    <div class="works-item-img-container">
+                        <img src="img/work.PNG" alt="trabajo de desarrollo web 1" class="works-item-img"/>
+                    </div>
+                    <div class="works-item-description">
+                        <header>
+                            <h2 class="work-item-articule">Desarrollo web</h2>
+                            <p class="work-item-client">Para <a href="https://www.google.com" target="blank">Nuestro cliente</a> </p> <!--El atributo blank decide si se abrira una nueva pestaña o en la misma-->
+                        </header>
+                        <div class="text-center">
+                            <a href="https://www.google.com" class="btn-blue" target="blank">Visitar web</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <div class="works-item-img-container">
+                        <img src="img/work.PNG" alt="trabajo de desarrollo web 1" class="works-item-img"/>
+                    </div>
+                    <div class="works-item-description">
+                        <header>
+                            <h2 class="work-item-articule">Desarrollo web2</h2>
+                            <p class="work-item-client">Para <a href="https://www.google.com" target="blank">Nuestro cliente</a> </p> <!--El atributo blank decide si se abrira una nueva pestaña o en la misma-->
+                        </header>
+                        <div class="text-center">
+                            <a href="https://www.google.com" class="btn-blue" target="blank">Visitar web</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="works-item">
+                    <div class="works-item-img-container">
+                        <img src="img/work.PNG" alt="trabajo de desarrollo web 1" class="works-item-img"/>
+                    </div>
+                    <div class="works-item-description">
+                        <header>
+                            <h2 class="work-item-articule">Desarrollo web3</h2>
+                            <p class="work-item-client">Para <a href="https://www.google.com" target="blank">Nuestro cliente</a> </p> <!--El atributo blank decide si se abrira una nueva pestaña o en la misma-->
+                        </header>
+                        <div class="text-center">
+                            <a href="https://www.google.com" class="btn-blue" target="blank">Visitar web</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--Esta es la sección de contacto-->
+        <section id="contact" class="contact">
+            <header>
+                <h1 class="tittle-underline">
+                    <span>Contactame</span>
+                </h1>
+            </header>
+            <form action="server.php" method="post" class="contact-form">
+                <div class="contact-row">
+                    <div class="contact-column left">
+                        <div>
+                            <label for="useremail">correo</label>
+                        </div>
+                        <div>
+                            <input id="useremail" name="useremail" type="email" class="contact-input-text" required/> <!--El nombre en los campos es obligatorio para que la maquina o reconozca-->
+                        </div> 
+                    </div>
+                    <div class="contact-column right">
+                        <div>
+                            <label for="username">usuario</label>
+                        </div>
+                        <div>
+                            <input id="username" name="username" type="text" class="contact-input-text" required/> <!--El required marca que debe ser necsario rellenar dicho campo-->
+                        </div> 
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-column --width100">
+                        <div>
+                            <label for="usermessage">Mensaje</label>
+                        </div>
+                        <div>
+                            <textarea id="usermessage" name="usermessage" rows="3"> 
+                            Hola que hace
+                            </textarea>
+                        </div>  
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn-blue" value="Enviar"/> <!--Boton para enviar los datos del formulario-->
+                </div>
+            </form>
+        </section>
+        <!--Esta es la seccion del pie de pagina-->
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <p class="footer-text">
+                    Hecho con <span class="iconheart">&#10084;</span> por <a href="https://github.com/Erwin-Eli-Parada?tab=repositories" target="blank" class="link">@Erwin-Eli-Parada</a>
+                </p>
+                <p>
+                    &#169; www.alacante.com
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
